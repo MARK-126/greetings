@@ -10,7 +10,7 @@ import (
 func Hello(name string) (string, error) {
 
 	if name == "" {
-		return "", errors.New("nombre vacio")
+		return name, errors.New("nombre vacio")
 	}
 	message := fmt.Sprintf(randomGreetings(), name)
 	return message, nil
